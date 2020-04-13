@@ -1,0 +1,12 @@
+* {
+    font-weight: normal;
+}
+
+h1.highlight {
+    color: line;
+    background-color: #333;
+}
+
+div h1 {
+    font-size: 66px;
+}
