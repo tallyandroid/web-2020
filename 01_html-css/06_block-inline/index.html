@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Inline</title>
+    <style>
+        body {
+            margin: 28px;
+        }
+
+        body * {
+            margin: 18px 0;
+            font-family: 'Cabin', sans-serif;
+            font-weight: normal;
+        }
+
+        .style {
+            background-color: #ef6412;
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        h1 {
+            display: inline;
+            display: inline-block;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- block level elements -->
+    <h1 class="style">I am an h1</h1>
+    <h2 class="style">I am an h2</h2>
+
+    <!-- inline -->
+    <strong class="style">I am a strong tag</strong>
+    <!-- block -->
+    <h1 class="style">I am a h1 tag</h1>
+    <!-- inline -->
+    <em class="style">I am a em tag</em>
+    <!-- inline -->
+    <a href="#" class="style">I am an a tag</a>
+</body>
+</html>
