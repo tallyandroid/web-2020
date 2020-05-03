@@ -1,12 +1,16 @@
-let header = document.getElementById("header")
-console.log(header)
+
+
+let isVisible = true
+let elements = document.querySelectorAll(".theme, h2")
+
+elements = Array.from(elements)
+
 
 function toggleVisibility() {
-    console.log("Toggle")
+    isVisible = !isVisible
 
-    if(header.style.visibility === "hidden") {
-        header.style.visibility = "visible" 
-        return
-    }
-    header.style.visibility = "visible"
+    let visibility = isVisible ? "visible" : "hidden"
+    elements.forEach(function(elem, i) {
+        elem.style.visibility = visibility
+    })
 }
